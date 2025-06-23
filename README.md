@@ -1,90 +1,100 @@
-# IT Security Project – Warmaksan Risk Management and Protection Plan
+# 🌿 Helping the Environment – Sustainable Tech Project
 
-## Overview
+## 📌 Overview
 
-This project presents a full security assessment and protection strategy for Warmaksan, a hypothetical organization. It identifies critical assets, evaluates potential threats, outlines risk levels, recommends security controls, and aligns security strategies with standards like ISO 31000 and GDPR. The report also proposes policies and stakeholder roles to build a strong IT security foundation.
+**Helping the Environment** is a project focused on reducing the environmental impact of digital transformation by promoting sustainable practices within an organization. It was developed as part of a university computing course to explore solutions like recycling, refurbishing devices, and raising employee awareness. 
 
-## Objectives
+This project proposes a detailed **recycling program**, a **tracking inventory system**, and **training modules** to support a greener digital environment.
 
-- Assess the confidentiality, integrity, and availability (CIA) of key assets
-- Identify and prioritize system vulnerabilities and threats
-- Recommend technical, physical, and administrative security controls
-- Align Warmaksan policies with IT security requirements
-- Implement risk assessment and auditing methodologies (e.g., ISO 31000)
-- Enhance compliance with GDPR and related regulations
+---
 
-## Project Sections
+## 🎯 Objectives
 
-### Asset Evaluation (Part A)
-- Hardware: Servers, storage devices, networking hardware
-- Software: OS, applications, security and backup tools
-- Data: Customer data and disk storage
-- Network: VPN, subnets, internet connection
-- Risk areas analyzed using CIA principles
+- ♻️ Reduce e-waste and carbon footprint
+- 🖥 Promote reuse of devices through repairs and refurbishment
+- 🗂 Develop a system to track recycled devices and parts
+- 🧑‍🏫 Provide training on sustainability for all employees
+- 📊 Monitor and evaluate program effectiveness
 
-### Risk Assessment (Part B)
-- Threats categorized by likelihood (e.g., possible, almost certain)
-- Consequences measured (e.g., minor, major, doomsday)
-- Top priorities include servers, customer information, and the data center
-- Level of risk determined for each asset and vulnerability
+---
 
-### Recommended Controls (Part C)
-- Technical controls: Firewalls, encryption, VPNs, multi-factor authentication
-- Physical security: CCTV, biometric access, environmental controls
-- Administrative controls: Access policies, password policies, audit procedures
+## ✅ Features
 
-### Security Strategy (Part D)
-- Alignment of IT and business security goals
-- Regulatory compliance through GDPR, encryption, access control, and retention policies
-- IT security audit implementation and impact
-- Data recovery, monitoring, and incident response planning
+### Functional Requirements
+- Repair and recycle used devices
+- Track device usage and recycling lifecycle
+- Offer employee incentives for sustainable practices
+- Establish partnerships for sustainability efforts
 
-### Risk Management (Part E, F)
-- ISO 31000 methodology applied
-- Risk identification, impact analysis, and mitigation
-- Regular reviews and updates based on business needs
+### Non-Functional Requirements
+- Easy-to-use, scalable, and secure system
+- Integration with existing tools
+- Environmentally friendly operation
+- Compliant with legal and sustainability standards
 
-### Policy Review (Part H–J)
-Detailed policies created for:
-- Data backup
-- Remote access
-- VPN and firewall configuration
-- Third-party access
-- GDPR compliance
-- Password and clean desk practices
+---
 
-### Stakeholder Roles (Part K)
-Defined responsibilities for:
-- Management
-- IT and security officers
-- HR and legal departments
-- Third-party vendors
-- End users and auditors
+## 🗓 Project Timeline
 
-## Key Learning Outcomes
+| Milestone                              | Date       |
+|----------------------------------------|------------|
+| Design Completion                      | 25 Jan     |
+| Coding Completion                      | 03 Mar     |
+| Deployment to All Employees            | 19 Apr     |
+| Recycling Program Developed            | 09 May     |
+| System Implementation & Tracking       | 01 Jun     |
+| Trainee Preparation & Delivery         | 19 Jun     |
 
-- Understanding of CIA triad in asset management
-- Application of security frameworks (ISO 31000, GDPR)
-- Risk assessment and classification
-- Design and evaluation of IT security policies
-- Network and system hardening practices
-- Policy alignment and incident response planning
-- Physical vs. virtual security measures
+---
 
-## Tools and Techniques Used
+## 🧰 Project Methodology
 
-- Risk matrices
-- Likelihood and consequence rating systems
-- IT security audit methodologies
-- VPN and network segmentation
-- Firewall and IDS configuration principles
-- Encryption technologies (AES, RSA)
-- Security awareness training strategies
+**Model Used**: Waterfall
 
-## Author
+> The Waterfall model was selected due to its linear, structured phases, well-suited to projects with fixed goals, clear requirements, and strict timelines.
 
-Farouq Hassan  
-Fall 2022  
-HTU – Security in Computing  
-Instructor: Dr. Safaa Hriez
+---
 
+## 📈 Deliverables & Success Criteria
+
+- **Recycling Program**: Minimum 50% device recycling rate
+- **Carbon Footprint Reduction**: 37% within one year
+- **Employee Participation**: 75% engagement in recycling initiatives
+- **Cost Reduction**: 30% through refurbished devices
+- **Inventory System**: Accurate tracking of recycled components
+- **Training Program**: At least 40% employee training completion
+
+---
+
+## 🧠 What I Learned
+
+This project taught me how to:
+
+- Build and manage a full project lifecycle
+- Apply sustainable IT practices
+- Conduct effective risk/change management
+- Communicate with both technical and non-technical stakeholders
+- Reflect on personal development and problem-solving under pressure
+
+---
+
+## 📂 Files Included
+
+- `Managing part 2.docx` – Full project report
+- `Managing.pptx` – Stakeholder presentation
+- `Logbooks Managing Part 2.docx` – Weekly progress logs
+- `Assessment Declaration Form` – Academic compliance
+- `Assignment Brief` – Project guidelines and learning outcomes
+
+---
+
+## 📢 Author
+
+**Farouq Hassan**  
+Fall 2022 | HTU | Managing a Successful Computing Project
+
+---
+
+## 💬 License
+
+This project is part of an academic submission and is licensed for educational use only.
