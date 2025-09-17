@@ -1,96 +1,126 @@
-# Digital Forensics Final Project – BlackEagle Investigation
+# Warmaksan IT Security Project
 
-## **Overview**
+### --
+## Overview
+This repository contains a full IT security assessment and improvement plan for **Warmaksan**.  
+It covers critical assets, risk analysis, countermeasures, policies, and alignment with **CIA principles** and **ISO 31000 risk management** standards.  
 
-This project documents a full digital forensic investigation conducted by the Digital Forensics Unit at Al-Hussein Technical University. The investigation was launched to examine a damaged USB drive and a suspect PC linked to the "BlackEagle" group. The objective was to uncover hidden data and recover evidence that could prevent an anticipated criminal activity.
+Prepared by **Farouq Hassan**  
+Supervised by **Dr. Safaa Hriez**:contentReference[oaicite:0]{index=0}:contentReference[oaicite:1]{index=1}
 
-## **Case Information**
+### --
+## Features
+- **Asset Inventory & CIA Mapping** – endpoints, servers, storage, cloud, applications, data, and networking:contentReference[oaicite:2]{index=2}  
+- **Risk Register** – likelihood vs. consequence matrix with prioritized risks:contentReference[oaicite:3]{index=3}  
+- **Countermeasures** – proposed security controls for each asset:contentReference[oaicite:4]{index=4}  
+- **Improvement Plan** – access control, encryption, DR/BCP, network segmentation, IDS/IPS:contentReference[oaicite:5]{index=5}  
+- **Audit Analysis** – misconfigurations, weak password policy, lack of segmentation, physical exposure:contentReference[oaicite:6]{index=6}  
+- **Security Policies** – Backup (GFS), Remote Access, Firewall/VPN, Third-Party, GDPR, Clean Desk, Password Policy:contentReference[oaicite:7]{index=7}  
+- **Physical & Virtual Security Benefits** – CCTV surveillance and VPN-secured remote access:contentReference[oaicite:8]{index=8}
 
-- **Case Name:** BlackEagle Investigation  
-- **Case Number:** CH-2024-1212  
-- **Investigator:** Farouq Hassan  
-- **Location:** Digital Forensics Lab, HTU  
-- **Search Warrant ID:** DF-2024-203456  
-- **Start Date:** June 7, 2024  
+### --
+## Security
+**Critical Assets**:
+- Endpoints, servers, storage, and cloud infrastructure  
+- Applications, operating systems, security software, backup/recovery tools  
+- Data (customer information, on-disk storage)  
+- Networking (subnets, internet, web apps, VPN):contentReference[oaicite:9]{index=9}
 
-## **Objectives**
+**Threats & Vulnerabilities**:
+- Malware, phishing, and physical theft  
+- Misconfigured firewalls/VPNs  
+- Weak passwords and outdated software  
+- Unencrypted storage and data in transit  
+- Data center physical exposure:contentReference[oaicite:10]{index=10}
 
-- Recover hidden or corrupted data from a USB drive and suspect PC  
-- Validate the integrity of all digital evidence  
-- Discover time-sensitive intelligence related to a planned incident
+**Controls & Countermeasures**:
+- Strong passwords, MFA, and RBAC:contentReference[oaicite:11]{index=11}  
+- Encryption (AES/RSA) for data at rest and in transit:contentReference[oaicite:12]{index=12}  
+- Secure configuration and patch management:contentReference[oaicite:13]{index=13}  
+- Backup & recovery drills using **GFS method**:contentReference[oaicite:14]{index=14}  
+- CCTV, locks, biometrics for physical access:contentReference[oaicite:15]{index=15}:contentReference[oaicite:16]{index=16}
 
-## **Tools Used**
+### --
+## Project Structure
+```text
+warmaksan-security/
+├─ docs/
+│  ├─ assets-cia-analysis.md
+│  ├─ risk-register.md
+│  ├─ countermeasures.md
+│  ├─ audit-findings.md
+│  └─ improvement-plan.md
+├─ policies/
+│  ├─ backup-policy.md
+│  ├─ remote-access-policy.md
+│  ├─ firewall-vpn-policy.md
+│  ├─ third-party-policy.md
+│  ├─ gdpr-compliance.md
+│  ├─ clean-desk-policy.md
+│  └─ password-policy.md
+└─ README.md
+--
+Installation
+This project is documentation-focused. To use it locally:
 
-| Tool               | Version   | Purpose                                           |
-|--------------------|-----------|---------------------------------------------------|
-| FTK Imager         | 4.7.1.2   | Imaging and mounting digital storage devices      |
-| HxD Hex Editor     | 2.5.0.0   | Low-level data inspection and manual recovery     |
-| HashMyFiles        | 2.4.4.0   | Generating and verifying hash values              |
-| JumpListExplorer   | 2.0.0.0   | Jump List data analysis on Windows systems        |
-| File Signature DB  | -         | File signature validation (Gary Kessler’s list)   |
+# Clone the repo
+git clone https://github.com/<org>/warmaksan-security.git
+cd warmaksan-security
 
-## **Summary of Findings**
+# (Optional) Install linting tools
+npm install -g markdownlint-cli
+markdownlint "**/*.md"
+--
+Testing
+Validation is procedural, not automated:
 
-### **USB Drive**
-- Initially unreadable using FTK Imager  
-- Manual recovery performed with HxD  
-- Located and extracted NTFS mirror, repaired file system  
-- Successfully recovered documents and images  
-- Verified all recovered files with hashes  
+Tabletop exercises: incident response & DR simulationsSecurity Final Project
 
-### **Suspect PC**
-- Forensic image created with write-blocker  
-- Key files discovered: `cage.png`, `cage3.png`, `untitled0.docx`  
-- `cage3.png` contained embedded DOCX file with hidden white-on-white text  
-- Message revealed a planned meeting on **June 11, 2024 at 12 PM, KHBP**
+Backup recovery drills: GFS restore testingSecurity Final Project
 
-## **Chain of Custody and Evidence Handling**
+Access reviews: VPN and third-party account auditsSecurity Final Project
 
-- USB and PC were bagged, labeled, and logged  
-- Hash values generated before and after imaging  
-- Forensic images stored securely using Tableau TX1  
-- Actions and handlers recorded in chain of custody form  
+Configuration checks: firewalls, VPN ciphers, segmentationSecurity Final Project
 
-## **Methodology**
+Awareness training: phishing tests, password enforcementSecurity Final Project
 
-The investigation followed **Rodney McKemmish’s Four-Step Model**:
-1. **Identification** – Devices identified and tagged  
-2. **Preservation** – Write-blockers used, original data untouched  
-3. **Analysis** – Hex analysis, signature checks, data carving  
-4. **Presentation** – Report with visual aids and detailed logs
+--
+Documentation & Analysis
+Assets & CIA Principles: Confidentiality, Integrity, Availability analysis for hardware, software, data, and networksSecurity Final Project
 
-## **Legal and Ethical Compliance**
+Risk Assessment: Ranked risks from Extreme (e.g., customer data breach, data center exposure) to Low (VPN/Internet connection)Security Final Project
 
-- Search warrant obtained before evidence seizure  
-- CCPA and GDPR data privacy compliance enforced  
-- Confidentiality, non-discrimination, and data minimization upheld  
-- Chain of custody and admissibility standards followed
+Audit Findings: password weaknesses, flat network design, unsecured data center accessSecurity Final Project
 
-## **Tool Comparison: Autopsy vs FTK Imager**
+ISO 31000 Alignment: structured risk identification, analysis, treatment, monitoringSecurity Final Project
 
-| Feature             | Autopsy                              | FTK Imager                         |
-|---------------------|---------------------------------------|-------------------------------------|
-| Type                | Full forensic suite                   | Imaging and preview tool            |
-| Use Case            | Deep analysis and reporting           | Initial acquisition and validation  |
-| Learning Curve      | Moderate                              | Easy                                |
-| Strength            | Timeline, email, web artifacts        | Imaging accuracy and hash checking  |
-| Limitation          | Resource intensive                    | Limited analysis capability         |
+Security Benefits:
 
-## **Recommendations for Future Investigations**
+Monitoring systems: faster troubleshooting, anomaly detection, capacity planningSecurity
 
-- Use automated recovery and AI-powered analysis tools  
-- Standardize templates for documentation and reporting  
-- Implement digital chain-of-custody systems  
-- Train investigators continuously on modern threats  
-- Maintain a secured forensic lab with proper access control  
+CCTV: surveillance and employee safetySecurity
 
-## **Conclusion**
+VPN: secure remote accessSecurity
 
-This project successfully demonstrated end-to-end digital forensic practice, including data recovery, low-level hex editing, and hidden message extraction. The evidence led to actionable intelligence that could disrupt a planned criminal act. The investigation adhered to industry best practices, legal standards, and ethical responsibilities.
+--
+Technologies Used
+Cryptography: AES, RSA encryptionSecurity Final Project
 
-## **Author**
+Network Security: Firewalls, VPN, IDS/IPS, segmentationSecurity Final Project
 
-**Farouq Hassan**  
-Spring 2024  
-HTU – Digital Forensics  
-Instructor: Dr. Safaa Hriez
+Backup: GFS method with offsite rotationSecurity Final Project
+
+Physical Security: CCTV, locks, biometricsSecuritySecurity Final Project
+
+Risk Management: ISO 31000 frameworkSecurity Final Project
+
+Compliance: GDPR requirements (DPO, breach reporting, data subject rights)Security Final Project
+
+--
+License
+This repository is for educational and organizational purposes.
+For public release, apply an open license (MIT, CC BY-SA, etc.) based on organizational policy.
+
+Prepared by: Farouq Hassan
+Supervised by: Dr. Safaa Hriez
+SecuritySecurity Final Project
